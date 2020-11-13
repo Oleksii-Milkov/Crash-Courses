@@ -10,14 +10,14 @@ for (let i = 0; i < SIZE; i++) {
 }
 
 console.log(arr);
-//console.log(getMinValue(arr));
+console.log(getMinValue(arr));
 
 function getMinValue(arr) {
   let min = arr;
   for (let i = 0; i < SIZE; i++) {
     for (let j = 0; j < SIZE; j++) {
       if (min[i][j] > arr[i][j]) {
-        min = arr[i][j]; //NOT WORKING(
+        min[i][0] = arr[i][j]; //NOT WORKING
       };
     }
   }
